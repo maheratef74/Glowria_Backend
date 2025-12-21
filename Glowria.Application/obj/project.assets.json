@@ -3949,11 +3949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/maher/Documents/Glowria/Glowria/Glowria.Application/Glowria.Application.csproj",
+      "projectUniqueName": "/home/maher/Documents/Glowria/Glowria.Application/Glowria.Application.csproj",
       "projectName": "Glowria.Application",
-      "projectPath": "/home/maher/Documents/Glowria/Glowria/Glowria.Application/Glowria.Application.csproj",
+      "projectPath": "/home/maher/Documents/Glowria/Glowria.Application/Glowria.Application.csproj",
       "packagesPath": "/home/maher/.nuget/packages/",
-      "outputPath": "/home/maher/Documents/Glowria/Glowria/Glowria.Application/obj/",
+      "outputPath": "/home/maher/Documents/Glowria/Glowria.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/maher/.nuget/NuGet/NuGet.Config"
@@ -3969,8 +3969,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/maher/Documents/Glowria/Glowria/Glowria.Domain/Glowria.Domain.csproj": {
-              "projectPath": "/home/maher/Documents/Glowria/Glowria/Glowria.Domain/Glowria.Domain.csproj"
+            "/home/maher/Documents/Glowria/Glowria.Domain/Glowria.Domain.csproj": {
+              "projectPath": "/home/maher/Documents/Glowria/Glowria.Domain/Glowria.Domain.csproj"
             }
           }
         }

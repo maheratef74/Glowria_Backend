@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gm9Qc3iylHs=",
+  "dgSpecHash": "0uyXtA/82nk=",
   "success": true,
-  "projectFilePath": "/home/maher/Documents/Glowria/Glowria/Glowria.Infrastructure/Glowria.Infrastructure.csproj",
+  "projectFilePath": "/home/maher/Documents/Glowria/Glowria.Infrastructure/Glowria.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/maher/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/maher/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
