@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Glowria.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c83e57535cc078693590ac0e6d861755a9a1086")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fa158b7cd97fe20bd5520fb6df5df42a05049a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Glowria.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Glowria.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "RsfSF3ds6BU=",
+  "dgSpecHash": "YkcQqjQ1DDA=",
   "success": true,
   "projectFilePath": "/home/maher/Documents/Glowria/Glowria.Application/Glowria.Application.csproj",
   "expectedPackageFiles": [
     "/home/maher/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/home/maher/.nuget/packages/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg.sha512",
+    "/home/maher/.nuget/packages/fluentvalidation.aspnetcore/11.3.1/fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "/home/maher/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.1.1/fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "/home/maher/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.3.0/microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "/home/maher/.nuget/packages/microsoft.aspnetcore.authentication.core/2.3.0/microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",
     "/home/maher/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/9.0.11/microsoft.aspnetcore.authentication.jwtbearer.9.0.11.nupkg.sha512",

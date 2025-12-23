@@ -38,7 +38,7 @@ public class AuthService : IAuthService
         await _customerRepository.AddCustomer(customer, request.Password);
         
         var token = await _tokenService.GenerateToken(customer, false);
-        return Result<string>.Success(_localizer["Student created successfully"] , token);
+        return Result<string>.Success(_localizer["Account created successfully"] , token);
     }
 
     public Task<Result<string>> LoginAsync(LoginRequest request)

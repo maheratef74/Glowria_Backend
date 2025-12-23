@@ -18,6 +18,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
 using Microsoft.Extensions.Localization;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +35,10 @@ var Configuration = builder.Configuration;
 #region register service
 
 builder.Services.AddControllers();
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
 
 #endregion
 
@@ -62,7 +69,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 #endregion
 
 #region  injecting interfaces and their implementations
-builder.Services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
 
 builder.Services.AddScoped<IResponseService, ResponseService>();
 builder.Services.AddAutoMapper(typeof(AuthProfile).Assembly);

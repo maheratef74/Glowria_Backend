@@ -13,13 +13,22 @@ public class RegisterRequestValidator : AbstractValidator<RegisterRequest>
 
         RuleFor(x => x.Password)
             .NotEmpty().WithMessage(localizer["Password is required"])
-            .MinimumLength(8).WithMessage(localizer["Password must be at least 8 characters"])
-            .Matches("[A-Z]").WithMessage(localizer["Password must contain an uppercase letter"])
-            .Matches("[a-z]").WithMessage(localizer["Password must contain a lowercase letter"])
-            .Matches("[0-9]").WithMessage(localizer["Password must contain a number"]);
+            .MinimumLength(6).WithMessage(localizer["Password must be at least 6 characters"]);
 
         RuleFor(x => x.Name)
             .NotEmpty().WithMessage(localizer["Name is required"])
             .MinimumLength(3).WithMessage(localizer["Name must be at least 3 characters"]);
+        
+        RuleFor(x => x.PhoneNumber)
+            .NotEmpty().WithMessage(localizer["Phone number is required"])
+            .Matches(@"^(?:\+20|0)?1[0125][0-9]{8}$")
+            .WithMessage(localizer["Invalid Egyptian phone number"]);
+
+        RuleFor(x => x.Address)
+            .NotEmpty().WithMessage(localizer["Address is required"]);
+
+        RuleFor(x => x.Confirmpassword)
+            .Equal(x => x.Password)
+            .WithMessage(localizer["Passwords do not match"]);
     }
 }

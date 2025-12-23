@@ -1,13 +1,20 @@
 {
   "Email already exists": "Email already exists",
-  "Student created successfully": "Student created successfully",
+  "Account created successfully": "Account created successfully",
+
   "Email is required": "Email is required",
   "Invalid email address": "Invalid email address",
+
   "Password is required": "Password is required",
-  "Password must be at least 8 characters": "Password must be at least 8 characters",
-  "Password must contain an uppercase letter": "Password must contain an uppercase letter",
-  "Password must contain a lowercase letter": "Password must contain a lowercase letter",
-  "Password must contain a number": "Password must contain a number",
+  "Password must be at least 6 characters": "Password must be at least 6 characters",
+
   "Name is required": "Name is required",
-  "Name must be at least 3 characters": "Name must be at least 3 characters"
+  "Name must be at least 3 characters": "Name must be at least 3 characters",
+
+  "Phone number is required": "Phone number is required",
+  "Invalid Egyptian phone number": "Invalid Egyptian phone number",
+
+  "Address is required": "Address is required",
+
+  "Passwords do not match": "Passwords do not match"
 }

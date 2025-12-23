@@ -1,13 +1,20 @@
 {
   "Email already exists": "البريد الإلكتروني موجود بالفعل",
-  "Student created successfully": "تم إنشاء الطالب بنجاح",
+  "Account created successfully": "تم إنشاء الحساب بنجاح",
+
   "Email is required": "البريد الإلكتروني مطلوب",
   "Invalid email address": "عنوان البريد الإلكتروني غير صالح",
+
   "Password is required": "كلمة المرور مطلوبة",
-  "Password must be at least 8 characters": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
-  "Password must contain an uppercase letter": "يجب أن تحتوي كلمة المرور على حرف كبير",
-  "Password must contain a lowercase letter": "يجب أن تحتوي كلمة المرور على حرف صغير",
-  "Password must contain a number": "يجب أن تحتوي كلمة المرور على رقم",
+  "Password must be at least 6 characters": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+
   "Name is required": "الاسم مطلوب",
-  "Name must be at least 3 characters": "يجب أن يكون الاسم 3 أحرف على الأقل"
+  "Name must be at least 3 characters": "يجب أن يكون الاسم 3 أحرف على الأقل",
+
+  "Phone number is required": "رقم الهاتف مطلوب",
+  "Invalid Egyptian phone number": "رقم الهاتف غير صالح (رقم مصري)",
+
+  "Address is required": "العنوان مطلوب",
+
+  "Passwords do not match": "لا يوجد تطابق بين كلمتي المرور"
 }
