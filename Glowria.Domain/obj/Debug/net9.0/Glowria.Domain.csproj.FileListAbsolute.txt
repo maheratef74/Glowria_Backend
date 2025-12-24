@@ -16,15 +16,12 @@
 /home/maher/Documents/Glowria/Glowria.Domain/bin/Debug/net9.0/Glowria.Domain.deps.json
 /home/maher/Documents/Glowria/Glowria.Domain/bin/Debug/net9.0/Glowria.Domain.dll
 /home/maher/Documents/Glowria/Glowria.Domain/bin/Debug/net9.0/Glowria.Domain.pdb
-/home/maher/Documents/Glowria/Glowria.Domain/bin/Debug/net9.0/Microsoft.Extensions.Identity.Stores.dll
-/home/maher/Documents/Glowria/Glowria.Domain/bin/Debug/net9.0/Microsoft.Extensions.Identity.Stores.xml
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria.Domain.csproj.AssemblyReference.cache
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria.Domain.GeneratedMSBuildEditorConfig.editorconfig
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria.Domain.AssemblyInfoInputs.cache
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria.Domain.AssemblyInfo.cs
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria.Domain.csproj.CoreCompileInputs.cache
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria.Domain.sourcelink.json
-/home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria..08BF4C4F.Up2Date
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria.Domain.dll
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/refint/Glowria.Domain.dll
 /home/maher/Documents/Glowria/Glowria.Domain/obj/Debug/net9.0/Glowria.Domain.pdb

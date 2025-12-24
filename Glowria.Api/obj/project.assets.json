@@ -2335,6 +2335,10 @@
       "Glowria.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.11",
+          "Microsoft.Extensions.Identity.Stores": "9.0.11"
+        },
         "compile": {
           "bin/placeholder/Glowria.Domain.dll": {}
         },
