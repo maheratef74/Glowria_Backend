@@ -16,5 +16,7 @@
 
   "Address is required": "العنوان مطلوب",
 
-  "Passwords do not match": "لا يوجد تطابق بين كلمتي المرور"
+  "Passwords do not match": "لا يوجد تطابق بين كلمتي المرور",
+
+  "Invalid Credentials.": "البيانات غير صحيحة"
 }

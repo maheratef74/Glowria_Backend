@@ -24,11 +24,8 @@ using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
 // Register OpenAPI (official)
 builder.Services.AddOpenApi();
-
 
 var Configuration = builder.Configuration;
 
@@ -82,11 +79,11 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 #region Add Identity password seeting
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     {
-        options.Password.RequireDigit = false;            // No digit required
-        options.Password.RequiredLength = 6;              // Minimum length of 6
-        options.Password.RequireNonAlphanumeric = false;  // No special character required
-        options.Password.RequireUppercase = false;        // No uppercase letter required
-        options.Password.RequireLowercase = false;        // No lowercase letter required
+        options.Password.RequireDigit = false;
+        options.Password.RequiredLength = 6;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireUppercase = false;
+        options.Password.RequireLowercase = false;
         options.Password.RequiredUniqueChars = 1;
     })
     .AddEntityFrameworkStores<AppDbContext>()
@@ -128,8 +125,17 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
         new CultureInfo("ar-EG"),
         new CultureInfo("en-US")
     };
-    options.DefaultRequestCulture = new RequestCulture(culture: supportedCultures[0]);
+    
+    options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
     options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+    
+    options.RequestCultureProviders = new List<IRequestCultureProvider>
+    {
+        new QueryStringRequestCultureProvider(),
+        new CookieRequestCultureProvider(),
+        new AcceptLanguageHeaderRequestCultureProvider()
+    };
 });
 
 #endregion
@@ -138,10 +144,7 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    // OpenAPI JSON
     app.MapOpenApi();
-
-    // Scalar UI
     app.MapScalarApiReference(options =>
     {
         options.Title = "Glowria API";
@@ -156,8 +159,6 @@ try
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-
-    // Seed roles and admin
     await DefaultRolesAndAdmin.SeedAsync(roleManager, userManager);
 }
 catch (Exception exception)
@@ -167,18 +168,11 @@ catch (Exception exception)
 }
 #endregion
 
-var supportedCultures = new[] { "ar-EG", "en-US" };
-var localizationOptions = new RequestLocalizationOptions()
-    .SetDefaultCulture(supportedCultures[0])
-    .AddSupportedCultures(supportedCultures);
-
 app.UseCors("AllowAll");
-app.UseRequestLocalization(localizationOptions);
+app.UseRequestLocalization(); // REMOVE the parameter here - it will use the configured options
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
-

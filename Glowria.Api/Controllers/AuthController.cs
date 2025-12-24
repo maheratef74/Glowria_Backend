@@ -1,4 +1,5 @@
 
+using Glowria.Application.Commands.Login;
 using Glowria.Application.Commands.Register;
 using Glowria.Application.Services.Authentcation;
 using Glowria.Application.Services.ResponseService;
@@ -24,6 +25,11 @@ public class AuthController : ControllerBase
         var response = await _authService.RegisterAsync(request);
         return _responseService.CreateResponse(response);
     }
-    
-   
+
+    [HttpPost("login")]
+    public async Task<IActionResult> Login(LoginRequest request)
+    {
+        var response = await _authService.LoginAsync(request);
+        return _responseService.CreateResponse(response);
+    }
 }
