@@ -53,8 +53,7 @@ builder.Services.AddCors(options =>
                     "https://glowria.vercel.app"
                 )
                 .AllowAnyHeader()
-                .AllowAnyMethod()
-                .AllowCredentials();
+                .AllowAnyMethod();
         });
 });
 #endregion
@@ -80,6 +79,8 @@ builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ITokenService, TokenService>();
 
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 #endregion
 
 #region Add Identity password seeting
@@ -174,7 +175,7 @@ catch (Exception exception)
 #endregion
 
 app.UseCors("AllowFrontend");
-app.UseRequestLocalization(); // REMOVE the parameter here - it will use the configured options
+app.UseRequestLocalization(); 
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

@@ -1,3 +1,4 @@
+using Glowria.Domain.Entities;
 using Identity.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -33,4 +34,6 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     }
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Admin> Admins { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories { get; set; }
 }

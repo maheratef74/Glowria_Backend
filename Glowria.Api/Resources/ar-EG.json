@@ -18,5 +18,16 @@
 
   "Passwords do not match": "لا يوجد تطابق بين كلمتي المرور",
 
-  "Invalid Credentials.": "البيانات غير صحيحة"
+  "Invalid Credentials.": "البيانات غير صحيحة",
+
+  
+  "Category.NameEn.Required": "الاسم بالإنجليزية مطلوب",
+  "Category.NameEn.MaxLength": "الاسم بالإنجليزية يجب ألا يزيد عن 100 حرف",
+
+  "Category.NameAr.Required": "الاسم بالعربية مطلوب",
+  "Category.NameAr.MaxLength": "الاسم بالعربية يجب ألا يزيد عن 100 حرف",
+
+  "Category.DescriptionEn.MaxLength": "الوصف بالإنجليزية يجب ألا يزيد عن 500 حرف",
+  "Category.DescriptionAr.MaxLength": "الوصف بالعربية يجب ألا يزيد عن 500 حرف"
+
 }

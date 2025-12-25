@@ -18,5 +18,16 @@
 
   "Passwords do not match": "Passwords do not match",
 
-  "Invalid Credentials.": "Invalid Credentials."
+  "Invalid Credentials.": "Invalid Credentials.",
+
+ 
+  "Category.NameEn.Required": "English name is required",
+  "Category.NameEn.MaxLength": "English name must not exceed 100 characters",
+
+  "Category.NameAr.Required": "Arabic name is required",
+  "Category.NameAr.MaxLength": "Arabic name must not exceed 100 characters",
+
+  "Category.DescriptionEn.MaxLength": "English description must not exceed 500 characters",
+  "Category.DescriptionAr.MaxLength": "Arabic description must not exceed 500 characters"
 }
+
