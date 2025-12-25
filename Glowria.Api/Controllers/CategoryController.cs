@@ -23,11 +23,11 @@ public class CategoryController
         _responseService = responseService;
     }
 
-    [HttpPost]
+    /*[HttpPost]
     public async Task<IActionResult> AddCategory([FromBody] CategoryAddRequest request)
     {
         var category = _mapper.Map<Category>(request);
         await _categoryRepository.AddAsync(category);
        // return Ok();
-    }
+    }*/
 }
