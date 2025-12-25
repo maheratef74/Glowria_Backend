@@ -44,12 +44,17 @@ builder.Services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>()
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
-        builder =>
+    options.AddPolicy("AllowFrontend",
+        policy =>
         {
-            builder.AllowAnyOrigin()
+            policy
+                .WithOrigins(
+                    "http://localhost:3000",
+                    "https://glowria.vercel.app"
+                )
+                .AllowAnyHeader()
                 .AllowAnyMethod()
-                .AllowAnyHeader();
+                .AllowCredentials();
         });
 });
 #endregion
@@ -168,7 +173,7 @@ catch (Exception exception)
 }
 #endregion
 
-app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");
 app.UseRequestLocalization(); // REMOVE the parameter here - it will use the configured options
 app.UseHttpsRedirection();
 app.UseAuthentication();
